@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'on-error-container': '#93000a', 'outline-variant': '#c6c6cd', 'inverse-surface': '#213145', 'on-secondary-container': '#652e00', 'on-tertiary-fixed': '#002114', 'primary-container': '#131b2e', 'on-primary-fixed': '#131b2e', 'surface-container-high': '#dce9ff', 'on-surface': '#0b1c30', 'surface-bright': '#f8f9ff', 'on-secondary-fixed-variant': '#733500', 'surface-container': '#e5eeff', 'secondary-fixed': '#ffdbc7', 'secondary-fixed-dim': '#ffb689', 'inverse-primary': '#bec6e0', 'primary-fixed-dim': '#bec6e0', 'on-secondary-fixed': '#311300', 'on-primary-container': '#7c839b', 'primary': '#000000', 'on-primary-fixed-variant': '#3f465c', 'secondary-container': '#fd8a35', 'surface-container-low': '#eff4ff', 'on-primary': '#ffffff', 'on-secondary': '#ffffff', 'primary-fixed': '#dae2fd', 'surface-tint': '#565e74', 'surface-container-lowest': '#ffffff', 'error': '#ba1a1a', 'secondary': '#974800', 'error-container': '#ffdad6', 'tertiary-fixed': '#85f8c4', 'surface': '#f8f9ff', 'tertiary-container': '#002114', 'surface-container-highest': '#d3e4fe', 'on-error': '#ffffff', 'surface-dim': '#cbdbf5', 'outline': '#76777d', 'on-background': '#0b1c30', 'on-surface-variant': '#45464d', 'on-tertiary-fixed-variant': '#005137', 'surface-variant': '#d3e4fe', 'on-tertiary': '#ffffff', 'tertiary': '#000000', 'tertiary-fixed-dim': '#68dba9', 'on-tertiary-container': '#069669', 'background': '#f8f9ff', 'inverse-on-surface': '#eaf1ff' }, borderRadius: { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, spacing: { 'margin': '1rem', 'space-lg': '1.25rem', 'gutter-lg': '1.5rem', 'space-xs': '0.25rem', 'margin-lg': '2rem', 'space-xl': '2rem', 'margin-md': '1.5rem', 'gutter': '1rem', 'space-md': '0.75rem', 'space-sm': '0.5rem' }, fontFamily: { 'label-md': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'headline-sm': ['Plus Jakarta Sans'], 'display-lg': ['Noto Serif'], 'label-sm': ['Plus Jakarta Sans'], 'numeric-data': ['Plus Jakarta Sans'], 'headline-lg': ['Noto Serif'], 'label-lg': ['Plus Jakarta Sans'], 'headline-md': ['Noto Serif'], 'headline-lg-mobile': ['Noto Serif'], 'body-lg': ['Plus Jakarta Sans'] }, fontSize: { 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.02em', fontWeight: '600' }], 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'headline-sm': ['16px', { lineHeight: '24px', fontWeight: '700' }], 'display-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.02em', fontWeight: '600' }], 'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.04em', fontWeight: '700' }], 'numeric-data': ['13px', { lineHeight: '18px', fontWeight: '500' }], 'headline-lg': ['28px', { lineHeight: '36px', letterSpacing: '-0.01em', fontWeight: '600' }], 'label-lg': ['14px', { lineHeight: '20px', fontWeight: '600' }], 'headline-md': ['20px', { lineHeight: '28px', fontWeight: '600' }], 'headline-lg-mobile': ['22px', { lineHeight: '28px', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }] } } } };</script><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col antialiased selection:bg-secondary selection:text-on-secondary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,23,42,0.04)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><div class="w-9 h-9 rounded bg-primary flex items-center justify-center text-on-primary font-headline-sm text-headline-sm shrink-0 shadow-sm">NG</div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface leading-none truncate font-semibold tracking-tight">Itineraries</span><div class="flex items-center gap-1.5 mt-1"><span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant truncate">Heli Comm: Active</span></div></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-28"><div class="flex flex-col w-full">
+<div class="px-margin pt-space-sm pb-space-lg flex flex-col gap-space-md">
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+          Internal Gate 04
+        </span>
+<span class="rounded bg-secondary-fixed text-on-secondary-fixed font-numeric-data text-numeric-data px-2 py-0.5 font-bold">
+          #NG-2025-1042
+        </span>
+</div>
+<div class="flex items-baseline justify-between pt-1">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Rajesh Singhania</h2>
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">group</span> 6 Pax (VIP)
+        </span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-secondary">flight_takeoff</span>
+<span class="font-body-sm text-body-sm">Char Dham Heli Circuit • Sahastradhara Base</span>
+</div>
+</div>
+<div class="rounded-xl bg-error-container text-on-error-container p-space-md shadow-sm relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 text-on-error-container/10 pointer-events-none">
+<span class="material-symbols-outlined text-[96px]">gavel</span>
+</div>
+<div class="flex items-start gap-space-sm relative z-10">
+<span class="material-symbols-outlined text-error text-[22px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">report</span>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-error-container">Mandatory Human Verification Gate</span>
+</div>
+<p class="font-body-sm text-body-sm leading-snug text-on-error-container/90">
+            This itinerary has <strong class="font-semibold underline decoration-error">NOT</strong> been sent to the client. Himalayan cottage quotas, DGCA Bell 407 payload ceilings, and ground protocol safety margins must be manually signed off prior to quote release.
+          </p>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">fact_check</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Verification Audit Rules</h3>
+</div>
+<span class="font-label-sm text-label-sm rounded-full bg-surface-container-high text-on-surface px-2 py-0.5">2 Pending</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="rounded-lg bg-surface-container-low p-space-sm flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-tertiary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-on-tertiary-container text-[16px] font-bold">check</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Dates &amp; Auspicious Muhurat</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">PASSED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              June 2 – June 8 aligns with Shubh Kedarnath Rudrabhishek darshan window.
+            </p>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-low p-space-sm flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-tertiary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-on-tertiary-container text-[16px] font-bold">check</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">High Altitude Cottage Heating</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">PASSED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              3 Premium heated suites confirmed at Harsil &amp; Guptkashi with 24h backup generator line.
+            </p>
+</div>
+</div>
+<div class="rounded-lg bg-secondary-fixed/40 p-space-sm flex flex-col gap-space-xs transition-colors" id="card-weight">
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-secondary-fixed">Senior Pax Weight Audit</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold" id="badge-weight">ACTION REQ</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5">
+                2 guests &gt; 70 yrs. Total booked payload estimate is <strong>435 kg</strong> vs DGCA Bell 407 high-density ceiling of <strong>450 kg</strong>. Margins are within 3.3%.
+              </p>
+</div>
+</div>
+<div class="pl-8 pt-1 flex items-center gap-space-sm">
+<button class="h-8 px-space-md rounded bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" id="btn-verify-weight">
+<span class="material-symbols-outlined text-[16px]">scale</span>
+<span>Verify Manifest Weight</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Gate: Guptkashi HQ</span>
+</div>
+</div>
+<div class="rounded-lg bg-secondary-fixed/40 p-space-sm flex flex-col gap-space-xs transition-colors" id="card-kitchen">
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">restaurant</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-secondary-fixed">Satvik Culinary Protocol</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold" id="badge-kitchen">ACTION REQ</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5">
+                Strict Jain Satvik protocol (no onion, garlic, or root vegetables). Harsil Valley Apple Retreat requires written head-chef signoff.
+              </p>
+</div>
+</div>
+<div class="pl-8 pt-1 flex items-center gap-space-sm">
+<button class="h-8 px-space-md rounded bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" id="btn-send-memo">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Send Hotel Kitchen Memo</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">P2 Priority</span>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">currency_rupee</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Commercial &amp; Margin Summary</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container bg-surface-container-high px-2 py-0.5 rounded font-bold">
+          Budget Fit
+        </span>
+</div>
+<div class="flex flex-col gap-space-xs text-on-surface-variant">
+<div class="flex items-center justify-between py-1 bg-surface-container-lowest">
+<span class="font-body-sm text-body-sm flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">helicopter</span>
+            Heli Charters (6 Pax Private Bell 407)
+          </span>
+<span class="font-numeric-data text-numeric-data text-on-surface font-semibold">₹4,80,000</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-lowest">
+<span class="font-body-sm text-body-sm flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">hotel</span>
+            Luxury Cottages (5N • 3 Suites)
+          </span>
+<span class="font-numeric-data text-numeric-data text-on-surface font-semibold">₹2,40,000</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-lowest">
+<span class="font-body-sm text-body-sm flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">airline_seat_recline_extra</span>
+            VIP Darshan Passes, Palki &amp; Logistics
+          </span>
+<span class="font-numeric-data text-numeric-data text-on-surface font-semibold">₹95,000</span>
+</div>
+<div class="mt-2 rounded-lg bg-surface-container-low p-space-sm flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Total Client Quote</span>
+<p class="font-body-sm text-body-sm text-on-tertiary-container">Target: ₹8,00,000 – ₹10,00,000</p>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">₹8,15,000</span>
+</div>
+<div class="rounded bg-surface-container-lowest p-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container">trending_up</span>
+<span class="font-label-md text-label-md text-on-surface">Operating Margin</span>
+</div>
+<div class="text-right">
+<span class="font-numeric-data text-numeric-data text-on-tertiary-container font-bold">₹1,50,775</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container ml-1">(18.5%)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">calendar_view_day</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Yatra Day-by-Day Roster</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">6 Days Total</span>
+</div>
+<div class="flex flex-col gap-2">
+<details class="group rounded-lg bg-surface-container-low overflow-hidden transition-all">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center justify-center shrink-0 font-bold">01</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Dehradun Arrival &amp; Briefing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Hyatt Regency • VIP Innova Crysta</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="rounded bg-surface-container-lowest text-on-tertiary-container font-label-sm text-label-sm px-2 py-0.5 font-bold">Verified</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</div>
+</summary>
+<div class="px-space-sm pb-space-sm pt-1 text-on-surface-variant font-body-sm text-body-sm bg-surface-container-low">
+            Welcomed at Jolly Grant Airport with sacred rudraksha garlands. Executive transfer to Hyatt Regency. Pre-flight briefing and biometric darshan pass registration by NG Heli Operations Lead.
+          </div>
+</details>
+<details class="group rounded-lg bg-surface-container-low overflow-hidden transition-all">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center justify-center shrink-0 font-bold">02</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Dehradun → Yamunotri</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Kharsali Helipad • 2 Senior Palkis</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="rounded bg-surface-container-lowest text-on-tertiary-container font-label-sm text-label-sm px-2 py-0.5 font-bold">Verified</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</div>
+</summary>
+<div class="px-space-sm pb-space-sm pt-1 text-on-surface-variant font-body-sm text-body-sm bg-surface-container-low">
+            06:30 lift-off from Sahastradhara to Kharsali helipad (20 min flight). Dedicated 4-bearer palkis allocated for Shri Rajesh &amp; Mother. Special temple escort through private VIP queue.
+          </div>
+</details>
+<details class="group rounded-lg bg-surface-container-low overflow-hidden transition-all">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center justify-center shrink-0 font-bold">03</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Kharsali → Harsil (Gangotri)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Apple Retreat • Heated Cottage</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="rounded bg-surface-container-lowest text-on-tertiary-container font-label-sm text-label-sm px-2 py-0.5 font-bold">Verified</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</div>
+</summary>
+<div class="px-space-sm pb-space-sm pt-1 text-on-surface-variant font-body-sm text-body-sm bg-surface-container-low">
+            Morning sortie to Harsil. Private road transport to Gangotri Temple sanctum for special Ganga pujan. Organic satvik orchard lunch prepared strictly under Jain diet guidelines.
+          </div>
+</details>
+<details class="group rounded-lg bg-surface-container-low overflow-hidden transition-all" open="">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center shrink-0 font-bold">04</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Harsil → Sersi • Kedarnath</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">VIP Sanctum Darshan + O2 Standby</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 font-bold" id="day4-status-badge">Pending Weight</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</div>
+</summary>
+<div class="px-space-sm pb-space-sm pt-1 text-on-surface-variant font-body-sm text-body-sm bg-surface-container-low flex flex-col gap-2">
+<p>Shuttle transfer to Kedarnath top helipad. Guaranteed VIP Sanctum entry pass for 6 pax. Dedicated ground medic accompanying group with portable medical-grade oxygen concentrators.</p>
+<div class="rounded bg-surface-container-lowest p-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">Shuttle Payload Slot</span>
+<span class="font-numeric-data text-numeric-data font-semibold text-secondary">08:15 AM Window • Bell 407</span>
+</div>
+</div>
+</details>
+<details class="group rounded-lg bg-surface-container-low overflow-hidden transition-all">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center justify-center shrink-0 font-bold">05</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Sersi → Badrinath</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Maha Abhishek Pooja Confirmed</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="rounded bg-surface-container-lowest text-on-tertiary-container font-label-sm text-label-sm px-2 py-0.5 font-bold">Verified</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</div>
+</summary>
+<div class="px-space-sm pb-space-sm pt-1 text-on-surface-variant font-body-sm text-body-sm bg-surface-container-low">
+            Arrival at Badrinath Helipad. Special seating inside the inner shrine for morning Maha Abhishek. Check-in at Sarovar Portico with temple view. Mana village cultural excursion in evening.
+          </div>
+</details>
+<details class="group rounded-lg bg-surface-container-low overflow-hidden transition-all">
+<summary class="flex items-center justify-between p-space-sm cursor-pointer list-none select-none">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center justify-center shrink-0 font-bold">06</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Badrinath → Rishikesh / DED</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Parmarth Niketan Ganga Aarti</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="rounded bg-surface-container-lowest text-on-tertiary-container font-label-sm text-label-sm px-2 py-0.5 font-bold">Verified</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</div>
+</summary>
+<div class="px-space-sm pb-space-sm pt-1 text-on-surface-variant font-body-sm text-body-sm bg-surface-container-low">
+            Scenic flight down the Alaknanda corridor landing at Sahastradhara. VIP road transfer to Parmarth Niketan for sunset Ganga Aarti with reserved front-row ghat seating. Airport drop-off.
+          </div>
+</details>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-high/60 p-space-sm flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">shield</span>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-md text-label-md text-on-surface">Field Manager Pre-flight Sign-off</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Ops Officer: Captain V. Bhatt • Guptkashi Stn</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">Active Heli-Link</span>
+</div>
+</div>
+<div class="fixed bottom-16 left-0 w-full z-40 bg-surface-container-lowest/95 backdrop-blur-md px-margin py-space-sm shadow-[0_-4px_16px_rgba(11,28,48,0.08)]">
+<div class="flex items-center gap-space-sm max-w-lg mx-auto">
+<button class="flex-1 h-11 px-3 rounded bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 active:scale-98 transition-transform" id="btn-request-revisions">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Request Revisions</span>
+</button>
+<button class="flex-[1.4] h-11 px-3 rounded bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-md active:scale-98 transition-transform font-bold" id="btn-approve-dispatch">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span id="btn-approve-dispatch-label">Approve &amp; Lock Dispatch</span>
+</button>
+</div>
+</div>
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-lg pointer-events-none opacity-0 transition-opacity duration-200 flex items-center gap-2" id="toast">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">check_circle</span>
+<span id="toast-message">Action Complete</span>
+</div>
+</div>
+<script>
+  (function () {
+    const weightBtn = document.getElementById('btn-verify-weight');
+    const memoBtn = document.getElementById('btn-send-memo');
+    const toast = document.getElementById('toast');
+    const toastMessage = document.getElementById('toast-message');
+    const cardWeight = document.getElementById('card-weight');
+    const badgeWeight = document.getElementById('badge-weight');
+    const cardKitchen = document.getElementById('card-kitchen');
+    const badgeKitchen = document.getElementById('badge-kitchen');
+    const day4Badge = document.getElementById('day4-status-badge');
+    const approveBtn = document.getElementById('btn-approve-dispatch');
+    const approveLabel = document.getElementById('btn-approve-dispatch-label');
+    const revisionBtn = document.getElementById('btn-request-revisions');
+
+    let weightVerified = false;
+    let kitchenVerified = false;
+
+    function showToast(msg) {
+      toastMessage.textContent = msg;
+      toast.classList.remove('opacity-0');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0');
+      }, 2600);
+    }
+
+    if (weightBtn) {
+      weightBtn.addEventListener('click', function () {
+        weightVerified = true;
+        cardWeight.className = 'rounded-lg bg-surface-container-low p-space-sm flex items-start gap-space-sm transition-colors';
+        cardWeight.innerHTML = `
+          <div class="w-6 h-6 rounded-full bg-tertiary-container flex items-center justify-center shrink-0 mt-0.5">
+            <span class="material-symbols-outlined text-on-tertiary-container text-[16px] font-bold">check</span>
+          </div>
+          <div class="flex flex-col flex-1 min-w-0">
+            <div class="flex items-center justify-between">
+              <span class="font-label-md text-label-md text-on-surface">Senior Pax Weight Audit</span>
+              <span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">PASSED (432 KG)</span>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Individual weight verified at Sahastradhara weighbridge. Payload cleared within Bell 407 safety trim.
+            </p>
+          </div>
+        `;
+        if (day4Badge) {
+          day4Badge.className = 'rounded bg-surface-container-lowest text-on-tertiary-container font-label-sm text-label-sm px-2 py-0.5 font-bold';
+          day4Badge.textContent = 'Verified';
+        }
+        showToast('Weight cleared: 432 kg payload locked.');
+      });
+    }
+
+    if (memoBtn) {
+      memoBtn.addEventListener('click', function () {
+        kitchenVerified = true;
+        cardKitchen.className = 'rounded-lg bg-surface-container-low p-space-sm flex items-start gap-space-sm transition-colors';
+        cardKitchen.innerHTML = `
+          <div class="w-6 h-6 rounded-full bg-tertiary-container flex items-center justify-center shrink-0 mt-0.5">
+            <span class="material-symbols-outlined text-on-tertiary-container text-[16px] font-bold">check</span>
+          </div>
+          <div class="flex flex-col flex-1 min-w-0">
+            <div class="flex items-center justify-between">
+              <span class="font-label-md text-label-md text-on-surface">Satvik Culinary Protocol</span>
+              <span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">CHEF ACKNOWLEDGED</span>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Chef Anuj (Harsil Retreat) confirmed segregated Jain Satvik kitchen station & zero root veggies.
+            </p>
+          </div>
+        `;
+        showToast('Kitchen protocol dispatched and confirmed.');
+      });
+    }
+
+    if (approveBtn) {
+      approveBtn.addEventListener('click', function () {
+        if (!weightVerified || !kitchenVerified) {
+          showToast('Complete weight and kitchen audit items first!');
+          return;
+        }
+        approveBtn.className = 'flex-[1.4] h-11 px-3 rounded bg-tertiary-container text-on-tertiary-container font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-md font-bold';
+        approveLabel.textContent = 'Locked & Sent to Rajesh';
+        approveBtn.disabled = true;
+        showToast('Itinerary #NG-2025-1042 successfully released to client!');
+      });
+    }
+
+    if (revisionBtn) {
+      revisionBtn.addEventListener('click', function () {
+        showToast('Ops revision request logged for Dispatch Team.');
+      });
+    }
+  })();
+</script></main><div class="fixed bottom-24 right-margin z-40"><button aria-label="New Enquiry Quick Action" class="h-12 px-space-md rounded-full bg-secondary text-on-secondary flex items-center gap-space-xs shadow-[0_4px_16px_rgba(194,94,0,0.28)] hover:bg-secondary-container transition-transform active:scale-95"><span class="material-symbols-outlined text-[20px]">add</span><span class="font-label-lg text-label-lg tracking-wide">Enquiry</span></button></div><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(15,23,42,0.05)]" data-active-classes="text-secondary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center flex-1 text-on-surface-variant hover:text-secondary transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm mt-0.5">Dashboard</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center flex-1 text-on-surface-variant hover:text-secondary transition-colors" data-path="enquiries" href="#"><span class="material-symbols-outlined text-[22px]">inbox</span><span class="font-label-sm text-label-sm mt-0.5">Enquiries</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center flex-1 text-on-surface-variant hover:text-secondary transition-colors" data-path="follow-ups" href="#"><span class="material-symbols-outlined text-[22px]">notification_important</span><span class="font-label-sm text-label-sm mt-0.5">Follow-ups</span></a><a aria-current="page" class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center flex-1 transition-colors text-secondary font-semibold" data-path="itineraries" href="#"><span class="material-symbols-outlined text-[22px]">temple_hindu</span><span class="font-label-sm text-label-sm mt-0.5">Itineraries</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center flex-1 text-on-surface-variant hover:text-secondary transition-colors" data-path="more" href="#"><span class="material-symbols-outlined text-[22px]">menu</span><span class="font-label-sm text-label-sm mt-0.5">More</span></a></div></nav></body></html>
